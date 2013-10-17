@@ -1,0 +1,17 @@
+extends layout
+
+block head
+  script(src='/javascripts/index.js')
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  div#users-list
+    strong USERS
+    div#users
+  
+  div#chat
+    div#conversation
+    input#data
+    input(type='button', id='datasend', value='send')
